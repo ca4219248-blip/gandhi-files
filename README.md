@@ -160,3 +160,18 @@ These are in `about.php` as the published policy; keep the code and the policy i
 ## License
 
 MIT for the code. The documents you publish remain the responsibility of whoever publishes them.
+
+
+## The static build on GitHub Pages
+
+`docs/` is a read-only static version of the archive, published by GitHub Pages at
+`https://ca4219248-blip.github.io/public-records-archive/`. It talks to Supabase directly with
+the publishable anon key, so row level security is what keeps drafts private: an anonymous
+visitor can read published records and categories, and can submit a right of reply, and nothing
+else. There is no admin panel in this build — publishing happens in the PHP admin panel.
+
+PDFs stay in the private bucket. The `supabase/functions/pdf` edge function takes a record slug,
+checks that the record is published, and redirects to a short lived signed URL.
+
+To change the project the static build points at, edit `docs/config.js` (public values only —
+never the service key).

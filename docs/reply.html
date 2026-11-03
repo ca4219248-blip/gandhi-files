@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Right of reply &middot; Public Records Archive</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">PRA</span>
+      <span class="brand-text">
+        <strong>Public Records Archive</strong>
+        <small>A sourced archive of public documents</small>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About &amp; policy</a>
+      <a href="reply.html">Right of reply</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <article class="prose">
+    <h1>Right of reply</h1>
+    <p>
+      If a record in this archive names you, your organisation or someone you represent, use this
+      form to send a reply, a correction or a clarification. Replies that address the document are
+      published on the record's page, and factual errors are corrected.
+    </p>
+
+    <div id="notice"></div>
+
+    <form class="stack" id="reply-form">
+      <div class="field">
+        <label for="name">Your name <span class="req">*</span></label>
+        <input type="text" id="name" name="name" required maxlength="120">
+      </div>
+
+      <div class="field">
+        <label for="email">Email <span class="req">*</span></label>
+        <input type="email" id="email" name="email" required maxlength="180">
+        <p class="hint">Not published. Used only to verify the reply.</p>
+      </div>
+
+      <div class="field">
+        <label for="organisation">Organisation (optional)</label>
+        <input type="text" id="organisation" name="organisation" maxlength="160">
+      </div>
+
+      <div class="field">
+        <label for="document_id">Which record?</label>
+        <select id="document_id" name="document_id">
+          <option value="">Not specific to one record</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Your reply <span class="req">*</span></label>
+        <textarea id="message" name="message" rows="8" required maxlength="5000"></textarea>
+        <p class="hint">Point to the specific statement you are replying to, and attach a link if you have one.</p>
+      </div>
+
+      <div class="field field-hidden" aria-hidden="true">
+        <label for="website">Website</label>
+        <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" id="submit">Send reply</button>
+    </form>
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="foot-note">
+      Public Records Archive publishes public documents with their sources. Each record links to
+      the original document so a reader can check it.
+    </p>
+    <p class="foot-meta">
+      <a href="about.html">Editorial policy</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="index.html">Archive</a>
+    </p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/reply.js"></script>
+</body>
+</html>

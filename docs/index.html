@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Archive &middot; Public Records Archive</title>
+<meta name="description" content="A sourced archive of public documents: court orders, audit reports, parliament records and notifications, each with its original source.">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">PRA</span>
+      <span class="brand-text">
+        <strong>Public Records Archive</strong>
+        <small>A sourced archive of public documents</small>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About &amp; policy</a>
+      <a href="reply.html">Right of reply</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>Public documents, with their sources attached</h1>
+    <p>
+      Every record here links to the original court order, audit report, parliamentary record,
+      notification or published report it comes from. Nothing is claimed beyond what the
+      document itself says.
+    </p>
+  </section>
+
+  <form class="filters" id="filters" method="get" action="index.html">
+    <div class="filter-row">
+      <input type="search" name="q" placeholder="Search titles, summaries and sources" aria-label="Search the archive">
+      <select name="category" aria-label="Category">
+        <option value="">All categories</option>
+      </select>
+      <button type="submit">Search</button>
+    </div>
+  </form>
+
+  <p class="result-count" id="count">Loading&hellip;</p>
+
+  <ol class="record-list" id="records"></ol>
+  <nav class="pager" id="pager"></nav>
+
+  <p class="disclaimer">
+    This archive republishes public documents with attribution. It does not assert that any
+    person is guilty of an offence. A criminal allegation is established only by a court.
+  </p>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="foot-note">
+      Public Records Archive publishes public documents with their sources. Each record links to
+      the original document so a reader can check it. Anyone named in a record has a
+      <a href="reply.html">right of reply</a>.
+    </p>
+    <p class="foot-meta">
+      <a href="about.html">Editorial policy</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="reply.html">Corrections and reply</a>
+    </p>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/list.js"></script>
+</body>
+</html>

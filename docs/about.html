@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About and editorial policy &middot; Public Records Archive</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">PRA</span>
+      <span class="brand-text">
+        <strong>Public Records Archive</strong>
+        <small>A sourced archive of public documents</small>
+      </span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Archive</a>
+      <a href="about.html">About &amp; policy</a>
+      <a href="reply.html">Right of reply</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <article class="prose">
+    <h1>About this archive</h1>
+    <p>
+      Public Records Archive is a small, independent index of public documents. Each entry points
+      to the original record &mdash; a court order, an audit report, a parliamentary answer, a
+      gazette notification or a published report &mdash; and gives the reader the source so they
+      can check it themselves.
+    </p>
+
+    <h2>What gets published</h2>
+    <ul>
+      <li>A record is listed only if the document itself is attached or linked, and its source is stated.</li>
+      <li>The summary on a record describes what the document says. It does not add a conclusion.</li>
+      <li>Records are written in neutral language. No adjectives about people, no motive, no verdict.</li>
+      <li>Drafts stay private. Only published records are visible, and files are served through short lived links.</li>
+    </ul>
+
+    <h2>What does not get published</h2>
+    <ul>
+      <li>Material that is not traceable to a document.</li>
+      <li>Private information about individuals &mdash; addresses, phone numbers, family details, health, minors.</li>
+      <li>Content that is abusive, threatening or aimed at a community.</li>
+      <li>Anything whose publication a court has restrained.</li>
+    </ul>
+
+    <h2>Right of reply and corrections</h2>
+    <p>
+      Anyone named in a record can send a reply, a correction or a clarification through the
+      <a href="reply.html">right of reply form</a>. Replies that address the document are published
+      on the record's page. If a factual error is shown, the record is corrected and the correction
+      is noted. If a document turns out to be withdrawn, superseded or restrained, the record is
+      unpublished.
+    </p>
+
+    <h2>Disclaimer</h2>
+    <p>
+      This site republishes documents; it does not investigate, accuse or conclude. Being named in
+      a public document is not a finding of guilt. An allegation of a criminal offence is
+      established only by a competent court, and every accused person is presumed innocent until
+      then. Nothing here is legal advice.
+    </p>
+
+    <h2>How this site is built</h2>
+    <p>
+      This is the static, read-only build, served by GitHub Pages. Records live in a Postgres
+      database and the PDFs in a private storage bucket; the page you are reading can only see
+      records that are published, because the database enforces that for anonymous visitors.
+      Editing happens in a separate admin panel, which runs on the PHP deployment of the same
+      project and is not part of this static build.
+    </p>
+
+    <h2>Contact</h2>
+    <p>Corrections and takedown requests: use the <a href="reply.html">right of reply form</a>.</p>
+  </article>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p class="foot-note">
+      Public Records Archive publishes public documents with their sources. Each record links to
+      the original document so a reader can check it. Anyone named in a record has a right of reply.
+    </p>
+    <p class="foot-meta">
+      <a href="index.html">Archive</a>
+      <span aria-hidden="true">&middot;</span>
+      <a href="reply.html">Corrections and reply</a>
+    </p>
+  </div>
+</footer>
+</body>
+</html>
