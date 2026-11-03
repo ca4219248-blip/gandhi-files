@@ -1,0 +1,26 @@
+# Apache 2.4 configuration for shared hosting.
+# If your host runs Apache 2.2, replace the Require lines with:
+#   Order allow,deny
+#   Deny from all
+
+Options -Indexes
+
+# Block dotfiles (.env, .git, .htaccess itself)
+<FilesMatch "^\.">
+  Require all denied
+</FilesMatch>
+
+# The application code and SQL live outside the public entry points.
+RedirectMatch 404 ^/app/
+RedirectMatch 404 ^/sql/
+
+# Basic hardening headers
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript
+</IfModule>
