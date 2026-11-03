@@ -50,7 +50,7 @@ return [
     'supabase_anon_key'    => (string) pra_env('SUPABASE_ANON_KEY', ''),
     'supabase_service_key' => (string) pra_env('SUPABASE_SERVICE_KEY', ''),
     'bucket'               => (string) pra_env('SUPABASE_BUCKET', 'pra-documents'),
-    'site_name'            => (string) pra_env('SITE_NAME', 'Public Records Archive'),
+    'site_name'            => (string) pra_env('SITE_NAME', 'Gandhi Files'),
     'site_tagline'         => (string) pra_env('SITE_TAGLINE', 'A sourced archive of public documents'),
     'site_url'             => rtrim((string) pra_env('SITE_URL', ''), '/'),
     'admin_url'            => rtrim((string) pra_env('ADMIN_URL', ''), '/'),

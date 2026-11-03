@@ -1,5 +1,5 @@
 -- ---------------------------------------------------------------------------
--- Public Records Archive - schema, row level security and storage setup
+-- Gandhi Files - schema, row level security and storage setup
 -- Run this once in the Supabase SQL editor, or apply it as a migration.
 -- Table names are prefixed with pra_ so they never collide with other apps
 -- that share the same database.

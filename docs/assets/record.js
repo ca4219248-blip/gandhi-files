@@ -106,7 +106,7 @@
       return;
     }
 
-    document.title = doc.title + " \u00b7 Public Records Archive";
+    document.title = doc.title + " \u00b7 Gandhi Files";
 
     let category = null;
     if (doc.category_id) {

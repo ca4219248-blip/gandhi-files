@@ -20,7 +20,7 @@ $adminUser = $auth->check() ? $auth->user() : null;
 <header class="site-head">
   <div class="wrap head-inner">
     <a class="brand" href="index.php">
-      <span class="brand-mark">PRA</span>
+      <span class="brand-mark">GF</span>
       <span class="brand-text">
         <strong><?= e((string) $config['site_name']) ?></strong>
         <small>Admin panel</small>

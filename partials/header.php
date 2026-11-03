@@ -18,7 +18,7 @@ $siteName  = (string) $config['site_name'];
 <header class="site-head">
   <div class="wrap head-inner">
     <a class="brand" href="index.php">
-      <span class="brand-mark">PRA</span>
+      <span class="brand-mark">GF</span>
       <span class="brand-text">
         <strong><?= e($siteName) ?></strong>
         <small><?= e((string) $config['site_tagline']) ?></small>
