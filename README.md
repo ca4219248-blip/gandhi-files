@@ -113,6 +113,23 @@ no Supabase calls, no login. Use GitHub as the code home (it is), and deploy the
 
 `.env` values also work as real environment variables, which is what PaaS hosts expect.
 
+### Running the admin panel on its own subdomain
+
+`admin/` is a separate section with its own layout, its own sign-in and no public navigation.
+To keep it off the public domain entirely, deploy the same repository a second time and point
+`admin.example.com` at it, with this in the admin deployment's `.htaccess`:
+
+```apache
+RewriteEngine On
+RewriteRule ^$ /admin/ [L,R=302]
+```
+
+Set `SITE_URL=https://example.com` and `ADMIN_URL=https://admin.example.com` in each `.env`
+so the cross links land in the right place. A simpler alternative on one domain: keep `/admin/`
+but restrict it at the edge (Cloudflare Access, a host firewall rule, or HTTP basic auth in
+`.htaccess`).
+
+
 ## 5. Adding a record
 
 `/admin/ → New record`. The form asks for the title, a neutral summary, the category, and then
